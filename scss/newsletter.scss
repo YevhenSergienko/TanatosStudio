@@ -1,0 +1,66 @@
+.newsletter {
+    background: $gradient-gray, url(../img/Newsletter/tablet.png) no-repeat center;
+    padding: 50px 0;
+
+    @media (min-width: 768px) {
+        padding: 100px 0;
+    }
+    
+    &__form {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        
+        @media (min-width: 576px) {
+            width: 500px;
+        }
+        
+        @media (min-width: 768px) {
+            width: 650px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        @media (min-width: 992px) {
+            width: 860px;
+        }
+    }
+    
+    &__field {
+        background-color: white;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        font-family: opensans;
+        font-weight: 300;
+        @include font-rem(13);
+        color: $color-light-gray;
+        box-sizing: border-box;
+        width: 280px;
+        padding: 17px 25px;
+        margin-bottom: 25px;
+
+        @media (min-width: 768px) {
+            width: 350px;
+            margin-bottom: 0;
+            padding: 15px 25px;
+            @include font-rem(16);   
+        }
+        
+        @media (min-width: 992px) {
+            width: 560px;   
+        }
+    }
+    
+    &__submit {
+        box-sizing: border-box;
+        width: 280px;
+        padding: 14px 0;
+                
+        @media (min-width: 768px) {
+            width: auto;
+            padding: 14px 90px;      
+        }
+    }
+}

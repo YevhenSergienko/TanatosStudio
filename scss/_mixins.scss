@@ -1,0 +1,3 @@
+@mixin font-rem($value: 16) {
+    font-size: $value / 16 * 1rem;
+}
