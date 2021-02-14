@@ -16,27 +16,80 @@
     }
     
     &__description {
-        width: 470px;
-        margin: 16px auto 85px;
+        margin: 16px auto 30px;
         font-family: opensans;
         font-weight: 400;
         @include font-rem(16);
         color: $color-gray-text; 
-        line-height: 2;   
+        line-height: 2;
+        
+        @media (min-width: 576px) {
+            width: 470px;
+        }
+
+        @media (min-width: 768px) {
+            margin: 16px auto 85px;
+        }
     }
     
     &__membersWrapper {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
+        align-items: center;
+        
+        @media (min-width: 576px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        @media (min-width: 768px) {
+            justify-content: space-around;
+        }
+
+        @media (min-width: 992px) {
+            justify-content: space-between;
+        }
     }
     
     &__member {
         width: 262px;
+
+        @media (min-width: 576px) {
+            width: 240px;
+        }
+
+        @media (min-width: 768px) {
+            width: 262px;
+        }
+
+        @media (min-width: 992px) {
+            width: 220px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 262px;
+        }
         
         &:hover &_photo {
             width: 262px;
-            height: 315px;
             filter: none;
+
+            @media (min-width: 576px) {
+                width: 240px;
+            }
+
+            @media (min-width: 768px) {
+                width: 262px;
+            }
+            
+            @media (min-width: 992px) {
+                width: 220px;
+            }
+
+            @media (min-width: 1200px) {
+                width: 262px;
+            }
         }
        
         &:hover &_name {
@@ -62,13 +115,36 @@
         &:hover &_photoUnderline {
             width: 262px;
             height: 5px;
+
+            @media (min-width: 576px) {
+                width: 240px;
+            }
+
+            @media (min-width: 768px) {
+                width: 262px;
+            }
+
+            @media (min-width: 992px) {
+                width: 220px;
+            }
+
+            @media (min-width: 1200px) {
+                width: 262px;
+            }
         }
 
         &_photo {
             width: 235px;
-            height: 280px;
             filter: grayscale(100%);
             transition: 0.5s;
+
+            @media (min-width: 992px) {
+                width: 200px;
+            }
+
+            @media (min-width: 1200px) {
+                width: 235px;
+            }
             
             &Wrapper {
                 position: relative;
@@ -76,6 +152,14 @@
                 display: flex;
                 align-items: flex-end;
                 justify-content: center;
+
+                @media (min-width: 992px) {
+                    height: 265px;
+                }
+
+                @media (min-width: 1200px) {
+                    height: 315px;
+                }
             }
             
             &Underline {
@@ -86,6 +170,14 @@
                 bottom: 0;
                 border-radius: 3px;
                 transition: 0.5s;
+
+                @media (min-width: 992px) {
+                    width: 200px;
+                }
+
+                @media (min-width: 1200px) {
+                    width: 235px;
+                }
             }
         }
         
@@ -97,6 +189,14 @@
             color: $color-most-light-gray;
             text-transform: uppercase;
             transition: 0.5s; 
+
+            @media (min-width: 992px) {
+                @include font-rem(18);
+            }
+
+            @media (min-width: 1200px) {
+                @include font-rem(25);
+            }
         }
         
         &_social {
