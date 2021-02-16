@@ -407,7 +407,7 @@
 }
 @media (min-width: 576px) {
   .team__member {
-    width: 240px;
+    width: 250px;
   }
 }
 @media (min-width: 768px) {
@@ -431,7 +431,7 @@
 }
 @media (min-width: 576px) {
   .team__member:hover .team__member_photo {
-    width: 240px;
+    width: 250px;
   }
 }
 @media (min-width: 768px) {
