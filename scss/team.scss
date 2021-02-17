@@ -1,7 +1,6 @@
 .team {
     padding: 95px 0;
-    text-align: center;
-    
+        
     &__membersWrapper {
         display: flex;
         flex-direction: column;
@@ -172,38 +171,6 @@
             color: $color-most-light-gray; 
             line-height: 2;
             transition: 0.5s;   
-        }
-    }
-}
-
-.page {
-    &__title {
-        margin: 0;
-        font-family: opensans;
-        font-weight: 600;
-        @include font-rem(35);
-        color: $color-gray-text;
-        text-transform: uppercase;
-        line-height: 1;
-        span {
-            color: $color-orange;    
-        }
-    }
-    
-    &__description {
-        margin: 16px auto 30px;
-        font-family: opensans;
-        font-weight: 400;
-        @include font-rem(16);
-        color: $color-gray-text; 
-        line-height: 2;
-        
-        @media (min-width: 576px) {
-            width: 470px;
-        }
-
-        @media (min-width: 768px) {
-            margin: 16px auto 85px;
         }
     }
 }
