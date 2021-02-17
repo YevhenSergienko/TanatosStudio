@@ -557,7 +557,54 @@
 }
 
 .contact {
-  padding: 95px 0;
+  background: linear-gradient(to bottom, rgba(84, 91, 98, 0.9), rgba(84, 91, 98, 0.9)), url(../img/Contact/city.png) no-repeat center;
+  padding: 100px 0 140px;
+}
+.contact__wrapper {
+  width: 830px;
+  margin: 0 auto;
+}
+.contact__introduce {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__introduce_mail {
+  width: 48%;
+}
+.contact__introduce_subject {
+  width: 48%;
+}
+.contact__introduce_message {
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+}
+
+.pageTitle__main.whiteText {
+  color: white;
+}
+.pageTitle__description.whiteText {
+  color: white;
+}
+
+.feedbackField {
+  box-sizing: border-box;
+  padding: 14px 20px;
+  font-family: opensans;
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #65696e;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 html {
