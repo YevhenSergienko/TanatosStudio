@@ -162,6 +162,10 @@
                 background-color: $color-most-light-gray;
                 transition: 0.5s;
             }
+            
+            &Icon {
+                color: white;
+            }
         }
         
         &_info {
@@ -173,10 +177,6 @@
             transition: 0.5s;   
         }
     }
-}
-
-.fa {
-    color: white;
 }
 
 .points {

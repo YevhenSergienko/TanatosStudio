@@ -514,6 +514,9 @@
   background-color: #c6c8cb;
   transition: 0.5s;
 }
+.team__member_socialIcon {
+  color: white;
+}
 .team__member_info {
   font-family: opensans;
   font-weight: 400;
@@ -521,10 +524,6 @@
   color: #c6c8cb;
   line-height: 2;
   transition: 0.5s;
-}
-
-.fa {
-  color: white;
 }
 
 .points {
@@ -558,21 +557,63 @@
 
 .contact {
   background: linear-gradient(to bottom, rgba(84, 91, 98, 0.9), rgba(84, 91, 98, 0.9)), url(../img/Contact/city.png) no-repeat center;
-  padding: 100px 0 140px;
+  padding: 40px 0;
+}
+@media (min-width: 1200px) {
+  .contact {
+    padding: 100px 0 135px;
+  }
 }
 .contact__wrapper {
-  width: 830px;
+  width: 100%;
   margin: 0 auto;
+}
+@media (min-width: 576px) {
+  .contact__wrapper {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .contact__wrapper {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .contact__wrapper {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact__wrapper {
+    width: 830px;
+  }
+}
+@media (min-width: 1440px) {
+  .contact__wrapper {
+    max-width: 1200px;
+  }
 }
 .contact__introduce {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .contact__introduce_mail {
-  width: 48%;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .contact__introduce_mail {
+    width: 48%;
+  }
 }
 .contact__introduce_subject {
-  width: 48%;
+  width: 100%;
+  margin-top: 20px;
+}
+@media (min-width: 1200px) {
+  .contact__introduce_subject {
+    width: 48%;
+  }
 }
 .contact__introduce_message {
   width: 100%;
@@ -603,8 +644,94 @@
 
 .info {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 30px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+  margin-top: 30px;
+}
+@media (min-width: 1200px) {
+  .social {
+    width: 300px;
+  }
+}
+.social__item {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__item_icon {
+  color: white;
+  font-size: 28px;
+}
+
+.messageSubmit {
+  padding: 14px 75px;
+}
+
+.Facebook {
+  background-color: #205b9f;
+}
+
+.Twitter {
+  background-color: #00ace3;
+}
+
+.GooglePlus {
+  background-color: #ff3921;
+}
+
+.Dribbble {
+  background-color: #ff72a5;
+}
+
+.Behance {
+  background-color: #009bd5;
+}
+
+.footer {
+  box-sizing: border-box;
+  position: relative;
+  padding: 44px 0 48px;
+  background-color: #3b434c;
+  transition: 0.5s;
+}
+.footer:hover .borderTopLine {
+  background-color: #9da1a6;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__text {
+  font-family: opensans;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+.footer__text b {
+  font-weight: 600;
+}
+.footer__text span {
+  color: red;
+}
+
+.borderTopLine {
+  position: absolute;
+  top: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #3b434c;
+  transition: 0.5s;
 }
 
 html {
