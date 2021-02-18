@@ -23,7 +23,7 @@
     
     &__member {
         width: 262px;
-
+        
         @media (min-width: 576px) {
             width: 250px;
         }
@@ -135,6 +135,7 @@
             @include font-rem(25);
             color: $color-most-light-gray;
             text-transform: uppercase;
+            text-align: center;
             transition: 0.5s; 
 
             @media (min-width: 992px) {
@@ -159,8 +160,19 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: $color-most-light-gray;
                 transition: 0.5s;
+                
+                &.Facebook {
+                    background-color: $color-most-light-gray;
+                }
+
+                &.Twitter {
+                    background-color: $color-most-light-gray;
+                }
+
+                &.GooglePlus {
+                    background-color: $color-most-light-gray;
+                }
             }
             
             &Icon {
@@ -172,8 +184,9 @@
             font-family: opensans;
             font-weight: 400;
             @include font-rem(14);
-            color: $color-most-light-gray; 
+            color: $color-most-light-gray;
             line-height: 2;
+            text-align: center;
             transition: 0.5s;   
         }
     }

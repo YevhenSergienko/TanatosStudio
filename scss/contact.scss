@@ -2,6 +2,10 @@
     background: $gradient-gray, url(../img/Contact/city.png) no-repeat center;
     padding: 40px 0;
 
+    @media (min-width: 992px) {
+        padding: 80px 0 95px;
+    }
+
     @media (min-width: 1200px) {
         padding: 100px 0 135px;
     }
@@ -10,24 +14,8 @@
         width: 100%;
         margin: 0 auto;
 
-        @media (min-width: 576px) {
-            max-width: 540px;
-        }
-        
-        @media (min-width: 768px) {
-            max-width: 720px;
-        }
-        
         @media (min-width: 992px) {
-            max-width: 960px;
-        }
-        
-        @media (min-width: 1200px) {
             width: 830px;
-        }
-        
-        @media (min-width: 1440px) {
-            max-width: 1200px;
         }
     }
     
@@ -36,10 +24,14 @@
         flex-direction: column;
         justify-content: space-between;
 
+        @media (min-width: 992px) {
+            flex-direction: row;
+        }
+
         &_mail {
             width: 100%;
 
-            @media (min-width: 1200px) {
+            @media (min-width: 992px) {
                 width: 48%;
             }
         }
@@ -48,8 +40,9 @@
             width: 100%;
             margin-top: 20px;
 
-            @media (min-width: 1200px) {
+            @media (min-width: 992px) {
                 width: 48%;
+                margin-top: 0;
             }
         }
 
@@ -84,21 +77,29 @@
     border-radius: 8px;
     outline: none;
 }
+
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     margin-top: 30px;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
 
 }
+
 .social {
     display: flex;
     justify-content: space-between;
     width: 290px;
     margin-top: 30px;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 768px) {
+        margin-top: 0;
         width: 300px;
     }
 
@@ -109,6 +110,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
         &_icon {
             color: white;
             font-size: 28px;
@@ -117,7 +119,11 @@
 }
 
 .messageSubmit {
+    width: 280px;
+    
+    @media (min-width: 768px) {
     padding: 14px 75px;
+    }
 }
 
 .Facebook {
@@ -143,30 +149,53 @@
 .footer {
     box-sizing: border-box;
     position: relative;
-    padding: 44px 0 48px;
+    padding: 20px 0;
     background-color: $color-gray-text;
     transition: .5s;
+
+    @media (min-width: 768px) {
+        padding: 30px 0;
+    }
+    
+    @media (min-width: 1200px) {
+        padding: 44px 0 48px;
+    }
+
     &:hover .borderTopLine {
         background-color: #9da1a6;
     }
     
     &__wrapper {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 577px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
     
     &__text {
         font-family: opensans;
         font-weight: 400;
-        @include font-rem(16);
+        @include font-rem(12);
         color: white;
         text-transform: uppercase;
+
+        @media (min-width: 768px) {
+            @include font-rem(14);
+        }
         
-        b{
+        @media (min-width: 1200px) {
+            @include font-rem(16);
+        }
+        
+        span.bold {
             font-weight: 600;
         }
         
-        span {
+        span.red {
             color: red;
         }
     }
