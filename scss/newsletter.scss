@@ -1,5 +1,6 @@
 .newsletter {
     background: $gradient-gray, url(../img/Newsletter/tablet.png) no-repeat center;
+    background-size: cover;
     padding: 50px 0;
 
     @media (min-width: 768px) {
